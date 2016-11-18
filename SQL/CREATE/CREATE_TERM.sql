@@ -1,6 +1,6 @@
 CREATE TABLE TERM(
-  Tahun INT NOT NULL
-  ,Semester INT NOT NULL
+  Tahun INT NOT NULL UNIQUE
+  ,Semester INT NOT NULL UNIQUE
   ,PRIMARY KEY (Tahun,Semester)
   
 );
