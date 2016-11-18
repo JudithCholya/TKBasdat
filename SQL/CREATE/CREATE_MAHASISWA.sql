@@ -1,0 +1,10 @@
+CREATE TABLE MAHASISWA(
+   NPM    CHAR(10) PRIMARY KEY
+  ,nama   VARCHAR(100) NOT NULL
+  ,username VARCHAR(30) NOT NULL
+  ,password VARCHAR(20) NOT NULL
+  ,email  VARCHAR(100) NOT NULL
+  ,email_alternatif VARCHAR(100)
+  ,telepon VARCHAR(100)
+  ,notelp VARCHAR(100)
+);
