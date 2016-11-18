@@ -1,0 +1,13 @@
+INSERT INTO JENISMKS(id,namamks) VALUES (1,'Skripsi');
+INSERT INTO JENISMKS(id,namamks) VALUES (2,'Karya Akhir');
+INSERT INTO JENISMKS(id,namamks) VALUES (3,'Proposal Tesis');
+INSERT INTO JENISMKS(id,namamks) VALUES (4,'Usulan Penelitian');
+INSERT INTO JENISMKS(id,namamks) VALUES (5,'Seminar Hasil Penelitian S3');
+INSERT INTO JENISMKS(id,namamks) VALUES (6,'Pra Promosi');
+INSERT INTO JENISMKS(id,namamks) VALUES (7,'Promosi');
+INSERT INTO JENISMKS(id,namamks) VALUES (8,'Thesis');
+INSERT INTO JENISMKS(id,namamks) VALUES (9,'Karya ABC');
+INSERT INTO JENISMKS(id,namamks) VALUES (10,'Workshop');
+INSERT INTO JENISMKS(id,namamks) VALUES (11,'Tugas Akhir');
+INSERT INTO JENISMKS(id,namamks) VALUES (12,'TK kelompok');
+INSERT INTO JENISMKS(id,namamks) VALUES (13,'Proposal Penelitian');
