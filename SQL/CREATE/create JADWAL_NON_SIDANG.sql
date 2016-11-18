@@ -1,0 +1,8 @@
+CREATE TABLE JADWAL_NON_SIDANG(
+   idjadwal Integer NOT NULL PRIMARY KEY
+  ,tanggalmulai Date NOT NULL
+  ,tanggalselesai Date NOT NULL
+  ,alasan VARCHAR(100) NOT NULL
+  ,repetisi VARCHAR(50)
+  ,nipdosen VARCHAR(10) REFERENCES DOSEN(NIP) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
