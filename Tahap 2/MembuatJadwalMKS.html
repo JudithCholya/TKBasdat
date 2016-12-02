@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tambah Jadwal Sidang MKS</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">SISIDANG</a>
+            </div>
+
+            <ul class="nav navbar-right top-nav">
+
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-user"></i> Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                       
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                   
+                    
+                    <li>
+                        <a href="pemesanan.html"><i class="fa fa-fw fa-plus-square"></i>Tambah Peserta MKS</a>
+                    </li>
+
+            
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-pencil-square"></i>Buat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Sidang MKS</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Non Sidang Dosen</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                   <!--  <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-pencil-square"></i>Buat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Sidang MKS</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Non Sidang Dosen</a>
+                            </li>
+
+                        </ul>
+                    </li> -->
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-table"></i>Lihat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Lihat Jadwal Sidang</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Lihat Daftar MKS</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Tambah Jadwal Sidang MKS
+                        </h1>
+                        <ol class="breadcrumb">
+                        <button type="button" class="btn btn-sm btn-success">Simpan</button>
+                        <button type="button" class="btn btn-sm btn-danger">Batal</button>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+    
+                        <form>
+                            <div class="form-group">
+                              <label for="sel1">Mahasiswa:</label>
+                              <select class="form-control" id="sel1">
+                                <option>Judith RK Cholya</option>
+                                <option>Annisa Ansyahli</option>
+                                <option>Mahiskia Shaumi</option>
+                                <option>Adinda Nadinta Juliana</option>
+                              </select>
+                            
+                            
+                             </div>
+                              
+                            <label>Tanggal:</label>
+                            <div class="input-group">
+                                
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                              <input id="date" type="date" class="form-control" name="date" placeholder="Date">
+                            </div>
+
+                            <br>
+                            <label>Jam Mulai:</label>
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                              <input id="time" type="time" class="form-control" name="time" placeholder="Time">
+                            </div>
+                            <br>
+                            <label>Jam Selesai:</label>
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                              <input id="time" type="time" class="form-control" name="time" placeholder="Time">
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+
+                              <label for="sel2">Ruangan:</label>
+                              <select class="form-control" id="sel2">
+                                <option>1101</option>
+                                <option>1102</option>
+                                <option>1103</option>
+                                <option>1108</option>
+                              </select>
+                             </div>
+
+                            <div class="form-group">
+                                
+                              <label for="sel2">Penguji 1:</label>
+                              <select class="form-control" id="sel2">
+                                <option>Achmad Fauzi, S.Sos., M.E</option>
+                                <option>Agung Shamsuddin Saragih, S.T., MS.Eng.</option>
+                                <option>Amelia Hezkasari Day, S.S., M.E.</option>
+                                <option>Arief Syarifuddin Fitrianto, M.Si.</option>
+                              </select>
+                             </div>
+
+                             <div class="form-group">
+                                
+                              <label for="sel2">Penguji 2:</label>
+                              <select class="form-control" id="sel2">
+                                <option>Munawar Holil, S.S., M.Hum.</option>
+                                <option>Petrus Mursanto, Ir, M.Sc.Dr</option>
+                                <option>Wardatul Adawiyah, S.E., MBA.</option>
+                                <option>Wisnu Jatmiko, S.T., M.Kom., Dr. Eng.</option>
+                              </select>
+                             </div>
+
+                             <label>Pengumpulan Hardcopy:</label>
+                             <div class="checkbox">
+                              <label><input type="checkbox" value="">Sudah</label>
+                            </div>
+                           
+                            <br>
+                            <button type="button" class="btn btn-sm btn-primary">Tambah Penguji +</button>
+                        </form>
+  
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
