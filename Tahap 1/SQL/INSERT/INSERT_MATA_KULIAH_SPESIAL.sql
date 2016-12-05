@@ -78,3 +78,9 @@ INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,Peng
 INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (78,'388833060',2017,6,'Perdagangan Elektronik',FALSE,TRUE,FALSE,11);
 INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (79,'383484385',2017,6,'Perdagangan Elektronik',FALSE,FALSE,TRUE,11);
 INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (80,'803726269',2017,6,'E-Business & E-Government',TRUE,TRUE,TRUE,9);
+
+
+
+INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (81,'803726269',2017,6,'E-Business & E-Government',TRUE,TRUE,FALSE,9);
+INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (82,'803726269',2017,6,'E-Business & E-Government',FALSE,TRUE,TRUE,9);
+INSERT INTO MATA_KULIAH_SPESIAL(IdMKS,NPM,Tahun,Semester,Judul,IsSiapSidang,PengumpulanHardCopy,IjinMajuSidang,IdJenisMKS) VALUES (83,'803726269',2017,6,'E-Business & E-Government',FALSE,TRUE,TRUE,9);

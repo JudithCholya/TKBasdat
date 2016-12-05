@@ -1,4 +1,4 @@
-INSERT INTO PRODI(id,namaprodi) VALUES (ID,'NamaProdi');
+
 INSERT INTO PRODI(id,namaprodi) VALUES (1,'S1 Ilmu Komputer');
 INSERT INTO PRODI(id,namaprodi) VALUES (2,'S1 Sistem Informasi');
 INSERT INTO PRODI(id,namaprodi) VALUES (3,'SI Ilkom Kelas Internasional');

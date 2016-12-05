@@ -4,12 +4,7 @@ CREATE TABLE TIMELINE(
   ,Tanggal    DATE  NOT NULL
   ,Tahun      INT NOT NULL
   ,Semester   INT NOT NULL
-  ,FOREIGN KEY (Tahun) REFERENCES TERM(Tahun)
-  ,FOREIGN KEY (Semester) REFERENCES TERM(Semester)
-);
-
-
-  
+  ,FOREIGN KEY (Tahun,Semester) REFERENCES TERM(Tahun,Semester)
 );
 
 

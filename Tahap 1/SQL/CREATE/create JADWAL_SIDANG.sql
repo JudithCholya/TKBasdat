@@ -4,6 +4,6 @@ CREATE TABLE JADWAL_SIDANG(
   ,tanggal DATE  NOT NULL
   ,jammulai TIME  NOT NULL
   ,jamselesai TIME  NOT NULL
-  ,idruangan INT  NOT NULL
+  ,idruangan INT  NOT NULL,
 PRIMARY KEY (idjadwal,idmks)
 );

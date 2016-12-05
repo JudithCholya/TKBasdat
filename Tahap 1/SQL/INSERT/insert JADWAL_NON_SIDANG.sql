@@ -1,81 +1,80 @@
-INSERT INTO JADWAL_NON_SIDANG (idjadwal,tanggalmulai,tanggalselesai,alasan,repetisi,nipdosen) VALUES
-,('1','27/05/2016','30/05/2016','Mengajar di tempat lain','Mingguan','195208031')
-,('2','27/05/2016','30/05/2016','Antar anak ke sekolah','Harian','196305181')
-,('3','27/05/2016','30/05/2016','Pergi ke luar kota','Harian','150903140')
-,('4','27/05/2016','30/05/2016','Menguji di tempat lain','Bulanan','408050320')
-,('5','27/05/2016','30/05/2016','Mengajar ditempat lain','Mingguan','195802261')
-,('6','30/05/2016','03/06/2016','Pergi ke luar kota','Bulanan','607050201')
-,('7','30/05/2016','03/06/2016','Acara keluarga','Harian','198704262')
-,('8','30/05/2016','03/06/2016','Rapat tingkat universitas','Bulanan','706050100')
-,('9','30/05/2016','03/06/2016','Rapat mingguan gemastik','Mingguan','197705022')
-,('10','30/05/2016','03/06/2016','Pergi ke luar kota','Mingguan','160603039')
-,('11','03/06/2016','06/06/2016','Menguji di tempat lain','Mingguan','198704262')
-,('12','03/06/2016','06/06/2016','Antar anak ke sekolah','Mingguan','195707231')
-,('13','03/06/2016','06/06/2016','Acara keluarga','Bulanan','900300015')
-,('14','03/06/2016','06/06/2016','Mengajar ditempat lain','Bulanan','160603039')
-,('15','03/06/2016','06/06/2016','Rapat tingkat universitas','Harian','161203016')
-,('16','06/06/2016','10/06/2016','Ibadah','Bulanan','108050306')
-,('17','06/06/2016','10/06/2016','Service mobil','Harian','120805038')
-,('18','06/06/2016','10/06/2016','Pergi ke dokter gigi','Harian','196706252')
-,('19','06/06/2016','10/06/2016','Maintenance server','Harian','197305112')
-,('20','06/06/2016','10/06/2016','Ibadah','Mingguan','121203003')
-,('21','10/06/2016','13/06/2016','Pergi ke luar kota','Bulanan','120805038')
-,('22','10/06/2016','13/06/2016','Rapat tingkat universitas','Harian','171303001')
-,('23','10/06/2016','13/06/2016','Mengajar ditempat lain','Harian','195802261')
-,('24','10/06/2016','13/06/2016','Pergi ke luar kota','Bulanan','161203016')
-,('25','10/06/2016','13/06/2016','Service mobil','Bulanan','120805038')
-,('26','13/06/2016','16/06/2016','Rapat mingguan gemastik','Mingguan','195802261')
-,('27','13/06/2016','16/06/2016','Service mobil','Harian','120805038')
-,('28','13/06/2016','16/06/2016','Check up','Bulanan','195802261')
-,('29','13/06/2016','16/06/2016','Rapat tingkat universitas','Bulanan','197607242')
-,('30','13/06/2016','16/06/2016','Service mobil','Harian','150903140')
-,('31','15/6/2016','18/6/2016','Aliquam quis turpis.','Mingguan','607050201')
-,('32','27/5/2016','25/6/2016','Nullam molestie.','Harian','198704262')
-,('33','27/5/2016','24/6/2016','Integer ac leo.','Harian','706050100')
-,('34','28/6/2016','4/6/2016','In hac habitasse.','Bulanan','197705022')
-,('35','29/5/2016','9/6/2016','Morbi quis tortor id nulla.','Mingguan','160603039')
-,('36','13/6/2016','22/6/2016','In sagittis dui vel nisl.','Bulanan','195208031')
-,('37','23/5/2016','15/6/2016','Maecenas leo odio.','Harian','196305181')
-,('38','2/6/2016','23/6/2016','Integer ac neque.','Bulanan','150903140')
-,('39','24/5/2016','24/5/2016','Praesent blandit. Nam nulla.','Mingguan','408050320')
-,('40','24/5/2016','21/6/2016','Aenean auctor gravida sem.','Mingguan','195802261')
-,('41','25/5/2016','20/6/2016','In quis justo. Maecenas.','Mingguan','607050201')
-,('42','6/6/2016','16/6/2016','In est risus, auctor sed.','Mingguan','198704262')
-,('43','28/5/2016','30/5/2016','Pellentesque viverra pede.','Bulanan','197705022')
-,('44','16/6/2016','27/6/2016','Cras pellentesque volutpat dui.','Bulanan','160603039')
-,('45','27/5/2016','23/6/2016','Ut tellus. Nulla ut erat.','Harian','706050100')
-,('46','12/6/2016','25/6/2016','Cum sociis natoque.','Bulanan','161203016')
-,('47','31/5/2016','26/6/2016','Nulla neque libero.','Harian','108050306')
-,('48','23/5/2016','18/6/2016','Nulla justo.','Harian','120805038')
-,('49','18/6/2016','24/6/2016','Donec ut mauris.','Harian','196706252')
-,('50','23/5/2016','3/6/2016','Cras in purus eu.','Mingguan','900300015')
-,('51','15/6/2016','20/6/2016','Cum sociis natoque.','Bulanan','150903140')
-,('52','31/5/2016','28/6/2016','Maecenas rhoncus.','Harian','408050320')
-,('53','1/6/2016','27/6/2016','Integer non velit.','Harian','195802261')
-,('54','14/6/2016','26/6/2016','Donec quis orci eget.','Bulanan','607050201')
-,('55','31/5/2016','25/6/2016','Proin risus. Praesent lectus.','Bulanan','706050100')
-,('56','1/6/2016','9/6/2016','Fusce posuere felis.','Mingguan','197705022')
-,('57','23/5/2016','7/6/2016','Integer aliquet, massa.','Harian','160603039')
-,('58','5/6/2016','28/6/2016','In sagittis dui vel nisl.','Bulanan','195208031')
-,('59','21/6/2016','28/6/2016','Praesent id massa id.','Bulanan','197705022')
-,('60','28/5/2016','12/6/2016','Suspendisse potenti.','Harian','195208031')
-,('61','18/6/2016','26/6/2016','In hac habitasse.','Mingguan','196305181')
-,('62','24/5/2016','26/5/2016','Integer tincidunt ante.','Mingguan','607050201')
-,('63','11/6/2016','26/6/2016','Nullam orci pede.','Mingguan','120805038')
-,('64','3/6/2016','28/6/2016','Ut at dolor quis.','Bulanan','195802261')
-,('65','9/6/2016','16/6/2016','Integer a nibh.','Bulanan','108050306')
-,('66','3/6/2016','26/6/2016','Fusce posuere felis.','Harian','120805038')
-,('67','3/6/2016','4/6/2016','Mauris sit amet.','Bulanan','196706252')
-,('68','20/6/2016','24/6/2016','Nulla neque libero.','Harian','195208031')
-,('69','18/6/2016','26/6/2016','Nullam porttitor lacus at turpis.','Harian','160603039')
-,('70','8/6/2016','20/6/2016','Integer ac leo.','Harian','706050100')
-,('71','30/5/2016','7/6/2016','Integer aliquet.','Mingguan','160603039')
-,('72','7/6/2016','26/6/2016','Quisque erat eros.','Bulanan','197607242')
-,('73','9/6/2016','10/6/2016','Mauris enim leo.','Harian','150903140')
-,('74','30/5/2016','31/5/2016','Integer tincidunt ante.','Harian','607050201')
-,('75','30/5/2016','30/5/2016','Suspendisse potenti.','Bulanan','197705022')
-,('76','26/5/2016','12/6/2016','Vivamus metus arcu.','Bulanan','160603039')
-,('77','8/6/2016','10/6/2016','Quisque id justo si.','Mingguan','195802261')
-,('78','10/6/2016','24/6/2016','In quis justo.','Harian','120805038')
-,('79','30/5/2016','23/6/2016','Nullam sit amet turpis.','Harian','197705022')
-,('80','28/5/2016','5/6/2016','Vivamus vestibulum.','Bulanan','160603039');
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (1,'2016-05-27','2016-05-30','Mengajar di tempat lain','Mingguan',195208031);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (2,'2016-05-27','2016-05-30','Antar anak ke sekolah','Harian',196305181);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (3,'2016-05-27','2016-05-30','Pergi ke luar kota','Harian',150903140);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (4,'2016-05-27','2016-05-30','Menguji di tempat lain','Bulanan',408050320);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (5,'2016-05-27','2016-05-30','Mengajar ditempat lain','Mingguan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (6,'2016-05-30','2016-06-03','Pergi ke luar kota','Bulanan',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (7,'2016-05-30','2016-06-03','Acara keluarga','Harian',198704262);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (8,'2016-05-30','2016-06-03','Rapat tingkat universitas','Bulanan',706050100);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (9,'2016-05-30','2016-06-03','Rapat mingguan gemastik','Mingguan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (10,'2016-05-30','2016-06-03','Pergi ke luar kota','Mingguan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (11,'2016-06-03','2016-06-06','Menguji di tempat lain','Mingguan',198704262);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (12,'2016-06-03','2016-06-06','Antar anak ke sekolah','Mingguan',195707231);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (13,'2016-06-03','2016-06-06','Acara keluarga','Bulanan',900300015);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (14,'2016-06-03','2016-06-06','Mengajar ditempat lain','Bulanan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (15,'2016-06-03','2016-06-06','Rapat tingkat universitas','Harian',161203016);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (16,'2016-06-06','2016-06-10','Ibadah','Bulanan',108050306);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (17,'2016-06-06','2016-06-10','Service mobil','Harian',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (18,'2016-06-06','2016-06-10','Pergi ke dokter gigi','Harian',196706252);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (19,'2016-06-06','2016-06-10','Maintenance server','Harian',197305112);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (20,'2016-06-06','2016-06-10','Ibadah','Mingguan',121203003);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (21,'2016-06-10','2016-06-13','Pergi ke luar kota','Bulanan',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (22,'2016-06-10','2016-06-13','Rapat tingkat universitas','Harian',171303001);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (23,'2016-06-10','2016-06-13','Mengajar ditempat lain','Harian',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (24,'2016-06-10','2016-06-13','Pergi ke luar kota','Bulanan',161203016);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (25,'2016-06-10','2016-06-13','Service mobil','Bulanan',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (26,'2016-06-13','2016-06-16','Rapat mingguan gemastik','Mingguan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (27,'2016-06-13','2016-06-16','Service mobil','Harian',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (28,'2016-06-13','2016-06-16','Check up','Bulanan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (29,'2016-06-13','2016-06-16','Rapat tingkat universitas','Bulanan',197607242);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (30,'2016-06-13','2016-06-16','Service mobil','Harian',150903140);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (31,'2016-06-15','2016-06-18','Aliquam quis turpis.','Mingguan',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (32,'2016-05-27','2016-06-25','Nullam molestie.','Harian',198704262);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (33,'2016-05-27','2016-06-24','Integer ac leo.','Harian',706050100);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (34,'2016-06-28','2016-06-04','In hac habitasse.','Bulanan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (35,'2016-05-29','2016-06-09','Morbi quis tortor id nulla.','Mingguan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (36,'2016-06-13','2016-06-22','In sagittis dui vel nisl.','Bulanan',195208031);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (37,'2016-05-23','2016-06-15','Maecenas leo odio.','Harian',196305181);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (38,'2016-06-02','2016-06-23','Integer ac neque.','Bulanan',150903140);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (39,'2016-05-24','2016-05-24','Praesent blandit. Nam nulla.','Mingguan',408050320);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (40,'2016-05-24','2016-06-21','Aenean auctor gravida sem.','Mingguan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (41,'2016-05-25','2016-06-20','In quis justo. Maecenas.','Mingguan',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (42,'2016-06-06','2016-06-16','In est risus, auctor sed.','Mingguan',198704262);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (43,'2016-05-28','2016-05-30','Pellentesque viverra pede.','Bulanan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (44,'2016-06-16','2016-06-27','Cras pellentesque volutpat dui.','Bulanan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (45,'2016-05-27','2016-06-23','Ut tellus. Nulla ut erat.','Harian',706050100);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (46,'2016-06-12','2016-06-25','Cum sociis natoque.','Bulanan',161203016);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (47,'2016-05-31','2016-06-26','Nulla neque libero.','Harian',108050306);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (48,'2016-05-23','2016-06-18','Nulla justo.','Harian',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (49,'2016-06-18','2016-06-24','Donec ut mauris.','Harian',196706252);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (50,'2016-05-23','2016-06-03','Cras in purus eu.','Mingguan',900300015);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (51,'2016-06-15','2016-06-20','Cum sociis natoque.','Bulanan',150903140);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (52,'2016-05-31','2016-06-28','Maecenas rhoncus.','Harian',408050320);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (53,'2016-06-01','2016-06-27','Integer non velit.','Harian',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (54,'2016-06-14','2016-06-26','Donec quis orci eget.','Bulanan',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (55,'2016-05-31','2016-06-25','Proin risus. Praesent lectus.','Bulanan',706050100);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (56,'2016-06-01','2016-06-09','Fusce posuere felis.','Mingguan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (57,'2016-05-23','2016-06-07','Integer aliquet, massa.','Harian',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (58,'2016-06-05','2016-06-28','In sagittis dui vel nisl.','Bulanan',195208031);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (59,'2016-06-21','2016-06-28','Praesent id massa id.','Bulanan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (60,'2016-05-28','2016-06-12','Suspendisse potenti.','Harian',195208031);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (61,'2016-06-18','2016-06-26','In hac habitasse.','Mingguan',196305181);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (62,'2016-05-24','2016-05-26','Integer tincidunt ante.','Mingguan',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (63,'2016-06-11','2016-06-26','Nullam orci pede.','Mingguan',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (64,'2016-06-03','2016-06-28','Ut at dolor quis.','Bulanan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (65,'2016-06-09','2016-06-16','Integer a nibh.','Bulanan',108050306);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (66,'2016-06-03','2016-06-26','Fusce posuere felis.','Harian',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (67,'2016-06-03','2016-06-04','Mauris sit amet.','Bulanan',196706252);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (68,'2016-06-20','2016-06-24','Nulla neque libero.','Harian',195208031);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (69,'2016-06-18','2016-06-26','Nullam porttitor lacus at turpis.','Harian',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (70,'2016-06-08','2016-06-20','Integer ac leo.','Harian',706050100);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (71,'2016-05-30','2016-06-07','Integer aliquet.','Mingguan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (72,'2016-06-07','2016-06-26','Quisque erat eros.','Bulanan',197607242);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (73,'2016-06-09','2016-06-10','Mauris enim leo.','Harian',150903140);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (74,'2016-05-30','2016-05-31','Integer tincidunt ante.','Harian',607050201);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (75,'2016-05-30','2016-05-30','Suspendisse potenti.','Bulanan',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (76,'2016-05-26','2016-06-12','Vivamus metus arcu.','Bulanan',160603039);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (77,'2016-06-08','2016-06-10','Quisque id justo si.','Mingguan',195802261);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (78,'2016-06-10','2016-06-24','In quis justo.','Harian',120805038);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (79,'2016-05-30','2016-06-23','Nullam sit amet turpis.','Harian',197705022);
+INSERT INTO JADWAL_NON_SIDANG(IdJadwal,Tanggalmulai,Tanggalselesai,Alasan,Repetisi,NIPdosen) VALUES (80,'2016-05-28','2016-06-05','Vivamus vestibulum.','Bulanan',160603039);
