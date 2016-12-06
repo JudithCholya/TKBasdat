@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tambah Jadwal Sidang MKS</title>
+    <title>Tambah Data MKS</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -100,46 +100,37 @@
 
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Tambah Data MKS
-                        </h1>
-                        <ol class="breadcrumb">
-                        <button type="button" class="btn btn-sm btn-success">Simpan</button>
-                        <button type="button" class="btn btn-sm btn-danger">Batal</button>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div class="row">
-
-                    <div class="col-lg-12">
-    
-                        <form>
-                            <div class="form-group">
-                              <label for="sel1">Term:</label>
-                              <select class="form-control" id="sel1">
-                                <option>
-                                   <?php
-                                    $conn = connectDB();
-                                    pg_query($conn, "SET search_path TO SISIDANG");
-                                    $result = pg_query($conn, "SELECT * FROM Term") or die("Cannot execute query : " . pg_last_error());
-                                    while ($row = pg_fetch_assoc($result)) {
-                                      echo "<option>" . $row['tahun'] . "</option>";
-                                    }
-                                     $term = test_input($_POST["term"]);
-                                    pg_close;
-                                  ?>
-                              </select>
-                             </div>
-
-                             <div class="form-group">
-                              <label for="sel2">Jenis MKS:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
+               <h2>Tambah Data MKS</h2>
+          <br>
+          <br>
+          <div class="container col-md-4">
+  <table class="table">
+    <thead>
+      <tr class="info">
+        <th>Term</th>
+        <th><div class="form-group">
+    <select class="form-control" id="sel1">
+      <option>
+      <?php
+                $conn = connectDB();
+                pg_query($conn, "SET search_path TO SISIDANG");
+                $result = pg_query($conn, "SELECT * FROM Term") or die("Cannot execute query : " . pg_last_error());
+                while ($row = pg_fetch_assoc($result)) {
+                  echo "<option>" . $row['tahun'] . "</option>";
+                }
+                 $term = test_input($_POST["term"]);
+                pg_close;
+               ?>
+    </select>
+  </div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td>Jenis MKS</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+      <option><?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM jenismks") or die("Cannot execute query : " . pg_last_error());
@@ -149,13 +140,15 @@
                 $jenis_mks = test_input($_POST["jenis_mks"]);
                 pg_close;
                ?>
-                              </select>
-                             </div>
-
-                             <div class="form-group">
-                              <label for="sel1">Mahasiswa:</label>
-                              <select class="form-control" id="sel1">
-                                <option><?php
+    </select>
+   
+  </div></td>
+      </tr>      
+      <tr class="info">
+        <td>Mahasiswa</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+      <option><?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM mahasiswa") or die("Cannot execute query : " . pg_last_error());
@@ -165,23 +158,23 @@
                 $mahasiswa = test_input($_POST["mahasiswa"]);
                 pg_close;
                ?>
-                              </select>
-                            
-                            
-                             </div>
-                              
-                           <label>Judul MKS:</label>
-                            <div class="input-group">
-                                
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                              <input id="judul" type="text" class="form-control" name="text" placeholder="Judul MKS">
-                            </div>
-                            
-                            <div class="form-group">
-                                
-                              <label for="sel2">Pembimbing 1:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
+    </select>
+      </td>
+       </select>
+  </div>
+      </tr>
+      <tr class="active">
+        <td>Judul MKS </td>
+       <td><input type="text" name="Judul MKS"></td>
+       <?php
+        //$judul_mks = test_input($_POST["judul_mks"]);
+        ?>
+      </tr>
+      <tr class="info">
+        <td>Pembimbing 1</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+      <option><?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
@@ -190,15 +183,16 @@
                 }
                 $pembimbing1 = test_input($_POST["pembimbing1"]);
                 pg_close;
-               ?>>
-                              </select>
-                             </div>
-
-                            <div class="form-group">
-                                
-                              <label for="sel2">Pembimbing 2:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
+               ?></td>
+       </select>
+  </div></td>
+        </tr>
+      <tr class="active">
+        <td>Pembimbing 2</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+    <option></option>
+      <option><?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
@@ -207,15 +201,16 @@
                 }
                  $pembimbing2 = test_input($_POST["pembimbing2"]);
                 pg_close;
-               ?>
-                              </select>
-                             </div>
-
-                            <div class="form-group">
-                                
-                              <label for="sel2">Pembimbing 3:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
+               ?></td>
+       </select>
+  </div></td>
+      </tr>
+      <tr class="info">
+        <td>Pembimbing 3</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+    <option></option>
+      <option><?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
@@ -224,15 +219,16 @@
                 }
                  $pembimbing3 = test_input($_POST["pembimbing3"]);
                 pg_close;
-               ?>
-                              </select>
-                             </div>
+               ?></td>
+       </select>
+  </div></td>
 
-                             <div class="form-group">
-                                
-                              <label for="sel2">Penguji 1:</label>
-                              <select class="form-control" id="sel2">
-                                <?php
+      </tr>
+      <tr class="active">
+        <td>Penguji 1</td>
+        <td><div class="form-group">
+    <select class="form-control" id="sel1">
+      <option>A<?php
                 $conn = connectDB();
                 pg_query($conn, "SET search_path TO SISIDANG");
                 $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
@@ -241,15 +237,24 @@
                 }
                  $penguji1 = test_input($_POST["penguji1"]);
                 pg_close;
-               ?>
-                              </select>
-                             </div>
+               ?></td>
+       </select>
+  </div></td>
 
-                            <button type="button" class="btn btn-sm btn-primary">Tambah Penguji +</button>
-                        </form>
-  
-                    </div>
-                </div>
+      </tr>
+      <tr class="info">
+        <td></td>
+        <td><button type="button" class="btn btn-success">+ Tambah Penguji</button></td>
+
+      </tr>
+      <tr class="active">
+        <td><button type="button" class="btn btn-success"> <a href = adminhome.php>Simpan</a></button></td>
+        <td><button type="button" class="btn btn-success">Batal</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
 
                 
 

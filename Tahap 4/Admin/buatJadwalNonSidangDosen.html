@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SIDANG - jadwal </title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">SISIDANG</a>
+            </div>
+
+            <ul class="nav navbar-right top-nav">
+
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-user"></i> Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                       
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                   
+                    
+                    <li>
+                        <a href="pemesanan.html"><i class="fa fa-fw fa-plus-square"></i>Tambah Peserta MKS</a>
+                    </li>
+
+            
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-pencil-square"></i>Buat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Sidang MKS</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Non Sidang Dosen</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-table"></i>Lihat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Lihat Jadwal Sidang</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Lihat Daftar MKS</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Membuat Jadwal Non-Sidang
+                        </h1>
+                        <br><br>
+                        <ol class="breadcrumb">
+                        <p>
+             		<button type="button" class="btn btn-sm btn-default">Simpan</button>
+           		 	<button type="button" class="btn btn-sm btn-default">Batal</button>
+            			</p>
+                       
+            Dosen :  
+            <select>
+                <option> Ani </option>
+                <option> Citra </option>
+                <option> Pao Panda </option>
+            </select>
+            <br><br>
+           
+            Tanggal Mulai : 
+            <input name="tanggal-mulai" placeholder="" type="date" /> <br><br>
+
+            Tanggal Selesai : 
+            <input name="tanggal-selesai" placeholder="" type="date" /> <br><br>    
+
+            Jam Mulai : 
+            <input name="jam-mulai" placeholder="" type="time" /> <br><br>
+
+            Jam Selesai : 
+            <input name="jam-selesai" placeholder="" type="time" /> <br><br>   
+
+            Kegiatan Berulang :
+            <form>
+  				<input type="checkbox" name="harian"> Harian<br>
+  				<input type="checkbox" name="mingguan"> Mingguan<br>
+  				<input type="checkbox" name="bulanan"> Bulanan<br>
+  			</form>
+			<br><br> 
+
+			Keterangan : 
+            <input name="keterangan" placeholder="" type="text" /> <br><br>        
+
+
+                        </ol>
+                    </div>
+                </div>
+         
+
+             </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

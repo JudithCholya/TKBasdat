@@ -1,0 +1,60 @@
+/* CSS External Sheet by Ibad Rahadian Saladdin*/
+/*External style sheet*/
+@import url(https://fonts.googleapis.com/css?family=Righteous:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body{
+	background-color: #2c3e50;
+	margin: auto;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html, body{ 
+	height: 100%
+}
+body > #content { 
+	height: auto; 
+	min-height: 100%; 
+}
+/*content*/
+section.content{
+	background-color: #00000;
+	text-align: center;
+	margin : auto;
+	margin-top: 5%;
+	margin-bottom: 0;
+	max-width: 500px;
+	min-width: 400px;
+	padding-bottom: 2px;
+	padding-top: 5px;
+	border-radius: 10px 10px 10px 10px;
+}
+div#logo {
+	font-family: 'Righteous';
+	font-size: 35px; 
+	color: #F89406;
+}
+div#between-inputs{
+	margin: 5px;
+}
+
+input{
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	width: 350px;
+}
+#submit-input{
+	width: 100px;
+}
+#credits{
+	font-size: 9px;
+	color: white;
+	padding-bottom : 0;
+	margin-bottom: 0;
+}
+h1{
+	color: white;
+}

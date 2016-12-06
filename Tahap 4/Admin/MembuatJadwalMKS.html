@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-    include "database.php";
-    $resp = "";
-    ?>
-
 <head>
 
     <meta charset="utf-8">
@@ -77,7 +72,18 @@
                         </ul>
                     </li>
 
-                 
+                   <!--  <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-pencil-square"></i>Buat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Sidang MKS</a>
+                            </li>
+                            <li>
+                                <a href="daftarJadwalNonSidangNonDosen.html"><i class="fa fa-fw fa-university"></i>Buat Jadwal Non Sidang Dosen</a>
+                            </li>
+
+                        </ul>
+                    </li> -->
 
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-table"></i>Lihat Jadwal<i class="fa fa-fw fa-caret-down"></i></a>
@@ -104,7 +110,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Tambah Data MKS
+                            Tambah Jadwal Sidang MKS
                         </h1>
                         <ol class="breadcrumb">
                         <button type="button" class="btn btn-sm btn-success">Simpan</button>
@@ -120,131 +126,77 @@
     
                         <form>
                             <div class="form-group">
-                              <label for="sel1">Term:</label>
-                              <select class="form-control" id="sel1">
-                                <option>
-                                   <?php
-                                    $conn = connectDB();
-                                    pg_query($conn, "SET search_path TO SISIDANG");
-                                    $result = pg_query($conn, "SELECT * FROM Term") or die("Cannot execute query : " . pg_last_error());
-                                    while ($row = pg_fetch_assoc($result)) {
-                                      echo "<option>" . $row['tahun'] . "</option>";
-                                    }
-                                     $term = test_input($_POST["term"]);
-                                    pg_close;
-                                  ?>
-                              </select>
-                             </div>
-
-                             <div class="form-group">
-                              <label for="sel2">Jenis MKS:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM jenismks") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['namamks'] . "</option>";
-                }
-                $jenis_mks = test_input($_POST["jenis_mks"]);
-                pg_close;
-               ?>
-                              </select>
-                             </div>
-
-                             <div class="form-group">
                               <label for="sel1">Mahasiswa:</label>
                               <select class="form-control" id="sel1">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM mahasiswa") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                $mahasiswa = test_input($_POST["mahasiswa"]);
-                pg_close;
-               ?>
+                                <option>Judith RK Cholya</option>
+                                <option>Annisa Ansyahli</option>
+                                <option>Mahiskia Shaumi</option>
+                                <option>Adinda Nadinta Juliana</option>
                               </select>
                             
                             
                              </div>
                               
-                           <label>Judul MKS:</label>
+                            <label>Tanggal:</label>
                             <div class="input-group">
                                 
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                              <input id="judul" type="text" class="form-control" name="text" placeholder="Judul MKS">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                              <input id="date" type="date" class="form-control" name="date" placeholder="Date">
                             </div>
-                            
+
+                            <br>
+                            <label>Jam Mulai:</label>
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                              <input id="time" type="time" class="form-control" name="time" placeholder="Time">
+                            </div>
+                            <br>
+                            <label>Jam Selesai:</label>
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                              <input id="time" type="time" class="form-control" name="time" placeholder="Time">
+                            </div>
+                            <br>
+
                             <div class="form-group">
-                                
-                              <label for="sel2">Pembimbing 1:</label>
+
+                              <label for="sel2">Ruangan:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                $pembimbing1 = test_input($_POST["pembimbing1"]);
-                pg_close;
-               ?>>
+                                <option>1101</option>
+                                <option>1102</option>
+                                <option>1103</option>
+                                <option>1108</option>
                               </select>
                              </div>
 
                             <div class="form-group">
                                 
-                              <label for="sel2">Pembimbing 2:</label>
+                              <label for="sel2">Penguji 1:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $pembimbing2 = test_input($_POST["pembimbing2"]);
-                pg_close;
-               ?>
-                              </select>
-                             </div>
-
-                            <div class="form-group">
-                                
-                              <label for="sel2">Pembimbing 3:</label>
-                              <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $pembimbing3 = test_input($_POST["pembimbing3"]);
-                pg_close;
-               ?>
+                                <option>Achmad Fauzi, S.Sos., M.E</option>
+                                <option>Agung Shamsuddin Saragih, S.T., MS.Eng.</option>
+                                <option>Amelia Hezkasari Day, S.S., M.E.</option>
+                                <option>Arief Syarifuddin Fitrianto, M.Si.</option>
                               </select>
                              </div>
 
                              <div class="form-group">
                                 
-                              <label for="sel2">Penguji 1:</label>
+                              <label for="sel2">Penguji 2:</label>
                               <select class="form-control" id="sel2">
-                                <?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $penguji1 = test_input($_POST["penguji1"]);
-                pg_close;
-               ?>
+                                <option>Munawar Holil, S.S., M.Hum.</option>
+                                <option>Petrus Mursanto, Ir, M.Sc.Dr</option>
+                                <option>Wardatul Adawiyah, S.E., MBA.</option>
+                                <option>Wisnu Jatmiko, S.T., M.Kom., Dr. Eng.</option>
                               </select>
                              </div>
 
+                             <label>Pengumpulan Hardcopy:</label>
+                             <div class="checkbox">
+                              <label><input type="checkbox" value="">Sudah</label>
+                            </div>
+                           
+                            <br>
                             <button type="button" class="btn btn-sm btn-primary">Tambah Penguji +</button>
                         </form>
   

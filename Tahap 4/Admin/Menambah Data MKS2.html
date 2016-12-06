@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-    include "database.php";
-    $resp = "";
-    ?>
-
 <head>
 
     <meta charset="utf-8">
@@ -122,49 +117,39 @@
                             <div class="form-group">
                               <label for="sel1">Term:</label>
                               <select class="form-control" id="sel1">
-                                <option>
-                                   <?php
-                                    $conn = connectDB();
-                                    pg_query($conn, "SET search_path TO SISIDANG");
-                                    $result = pg_query($conn, "SELECT * FROM Term") or die("Cannot execute query : " . pg_last_error());
-                                    while ($row = pg_fetch_assoc($result)) {
-                                      echo "<option>" . $row['tahun'] . "</option>";
-                                    }
-                                     $term = test_input($_POST["term"]);
-                                    pg_close;
-                                  ?>
+                                <option>Ganjil 2015/2016</option>
+                                <option>Genap 2015/2016</option>
+                                <option>Ganjil 2016/2017</option>
+                                <option>Genap 2016/2017</option>
                               </select>
                              </div>
 
                              <div class="form-group">
                               <label for="sel2">Jenis MKS:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM jenismks") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['namamks'] . "</option>";
-                }
-                $jenis_mks = test_input($_POST["jenis_mks"]);
-                pg_close;
-               ?>
+                                <option>Skripsi</option>
+                                <option>Karya Akhir</option>
+                                <option>Proposal Tesis</option>
+                                <option>Usulan Penelitian</option>
+                                <option>Seminar Hasil Penelitian S3</option>
+                                <option>Pra Promosi</option>
+                                <option>Promosi</option>
+                                <option>Thesis</option>
+                                <option>Karya ABC</option>
+                                <option>Workshop</option>
+                                <option>Tugas Akhir</option>
+                                <option>TK Kelompok</option>
+                                <option>Proposal Penelitian</option>
                               </select>
                              </div>
 
                              <div class="form-group">
                               <label for="sel1">Mahasiswa:</label>
                               <select class="form-control" id="sel1">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM mahasiswa") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                $mahasiswa = test_input($_POST["mahasiswa"]);
-                pg_close;
-               ?>
+                                <option>Judith RK Cholya</option>
+                                <option>Annisa Ansyahli</option>
+                                <option>Mahiskia Shaumi</option>
+                                <option>Adinda Nadinta Juliana</option>
                               </select>
                             
                             
@@ -181,16 +166,10 @@
                                 
                               <label for="sel2">Pembimbing 1:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                $pembimbing1 = test_input($_POST["pembimbing1"]);
-                pg_close;
-               ?>>
+                                <option>Achmad Fauzi, S.Sos., M.E</option>
+                                <option>Agung Shamsuddin Saragih, S.T., MS.Eng.</option>
+                                <option>Amelia Hezkasari Day, S.S., M.E.</option>
+                                <option>Arief Syarifuddin Fitrianto, M.Si.</option>
                               </select>
                              </div>
 
@@ -198,16 +177,10 @@
                                 
                               <label for="sel2">Pembimbing 2:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $pembimbing2 = test_input($_POST["pembimbing2"]);
-                pg_close;
-               ?>
+                                <option>Achmad Fauzi, S.Sos., M.E</option>
+                                <option>Agung Shamsuddin Saragih, S.T., MS.Eng.</option>
+                                <option>Amelia Hezkasari Day, S.S., M.E.</option>
+                                <option>Arief Syarifuddin Fitrianto, M.Si.</option>
                               </select>
                              </div>
 
@@ -215,16 +188,10 @@
                                 
                               <label for="sel2">Pembimbing 3:</label>
                               <select class="form-control" id="sel2">
-                                <option><?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $pembimbing3 = test_input($_POST["pembimbing3"]);
-                pg_close;
-               ?>
+                                <option>Achmad Fauzi, S.Sos., M.E</option>
+                                <option>Agung Shamsuddin Saragih, S.T., MS.Eng.</option>
+                                <option>Amelia Hezkasari Day, S.S., M.E.</option>
+                                <option>Arief Syarifuddin Fitrianto, M.Si.</option>
                               </select>
                              </div>
 
@@ -232,16 +199,10 @@
                                 
                               <label for="sel2">Penguji 1:</label>
                               <select class="form-control" id="sel2">
-                                <?php
-                $conn = connectDB();
-                pg_query($conn, "SET search_path TO SISIDANG");
-                $result = pg_query($conn, "SELECT * FROM dosen") or die("Cannot execute query : " . pg_last_error());
-                while ($row = pg_fetch_assoc($result)) {
-                  echo "<option>" . $row['nama'] . "</option>";
-                }
-                 $penguji1 = test_input($_POST["penguji1"]);
-                pg_close;
-               ?>
+                                <option>Munawar Holil, S.S., M.Hum.</option>
+                                <option>Petrus Mursanto, Ir, M.Sc.Dr</option>
+                                <option>Wardatul Adawiyah, S.E., MBA.</option>
+                                <option>Wisnu Jatmiko, S.T., M.Kom., Dr. Eng.</option>
                               </select>
                              </div>
 
